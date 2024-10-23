@@ -1,51 +1,34 @@
-# React + TypeScript + Vite
+# Investment Application Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the development of an investment application based on a design created with Figma as part of the Web Design course from Flux Academy. The app aims to provide users with an intuitive interface to manage their investments, track performance, and make informed financial decisions.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The goal of this project is to transform a comprehensive UI design from Figma into a fully functional web application. The design focuses on modern, user-friendly interfaces that provide a seamless experience for managing various investments, including stocks, bonds, and other financial instruments. 
 
-- Configure the top-level `parserOptions` property like this:
+As part of the Web Design course from Flux Academy, this project showcases my skills in front-end development, including implementing responsive design principles, integrating custom fonts, and utilizing animations.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Portfolio Overview**: Users can view a summary of their investment portfolio.
+- **Investment Tracking**: Track the performance of individual investments in real-time.
+- **Market Insights**: Access live data feeds and market trends to make informed decisions.
+- **User-Friendly Dashboard**: Intuitive and modern dashboard designed with Figma to enhance the user experience.
+- **Mobile Responsiveness**: The app is fully responsive, designed to work on both desktop and mobile devices.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technologies
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Ace-Investments
+- **Front-end**: HTML, CSS, JavaScript (React.js)
+- **Design**: Figma (UI/UX)
+- **Other Tools**: Vite for bundling, GitHub for version control
+- **API**: Stock market data API (TBD) for real-time data feeds

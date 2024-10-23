@@ -1,0 +1,20 @@
+.container {
+	width: 100%;
+	height: fit-content;
+	padding: 8px;
+}
+
+.navbarContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+}
+
+.navbarButtons {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding: 16px;
+}
