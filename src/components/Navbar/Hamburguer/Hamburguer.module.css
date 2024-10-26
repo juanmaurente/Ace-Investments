@@ -52,7 +52,7 @@ button {
 	transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1023px) {
 	.hamburguer {
 		display: none;
 	}
