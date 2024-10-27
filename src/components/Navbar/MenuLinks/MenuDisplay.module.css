@@ -1,0 +1,66 @@
+.displayContainer {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: calc(100vw - 16px);
+	margin: -16px 8px;
+	background-color: #fff;
+	overflow: hidden;
+	max-height: 0; /* Initially collapsed */
+	transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0; /* Initially hidden */
+}
+
+.displayContainer.visible {
+	max-height: max-content;
+	opacity: 1; /* Fully visible */
+}
+.displayContainer ul {
+	padding: 0;
+	margin: 0px 16px 0px 8px;
+}
+
+.displayContainer ul li {
+	height: 80px;
+	border-top: 1px solid rgb(188, 188, 188);
+}
+
+.wChevron {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Submenu styling */
+.displayProductSubMenu {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: calc(100vw - 16px);
+	margin: -16px 8px;
+	background-color: #fff;
+	overflow: hidden;
+	max-height: 0; /* Initially collapsed */
+	transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0; /* Initially hidden */
+}
+
+.displayProductSubMenu.visible {
+	max-height: max-content;
+	opacity: 1; /* Fully visible */
+}
+
+.wChevron:hover .displayProductSubMenu {
+	max-height: 200px; /* Adjust based on submenu content */
+}
+
+.fullWidthButtons {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1023px) {
+	.displayProductSubMenu {
+		display: none;
+	}
+}

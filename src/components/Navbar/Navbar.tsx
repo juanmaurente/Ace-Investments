@@ -5,9 +5,11 @@ import Hamburguer from './Hamburguer/Hamburguer';
 import styles from './Navbar.module.css';
 import { useState } from 'react';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import MenuDisplay from './MenuLinks/MenuDisplay';
 
 const Navbar = () => {
 	const [isHovered, setIsHovered] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	const handleMouseEnter = () => {
 		setIsHovered(true);
@@ -15,6 +17,10 @@ const Navbar = () => {
 
 	const handleMouseLeave = () => {
 		setIsHovered(false);
+	};
+
+	const handleTogglemenu = () => {
+		setMenuOpen(!menuOpen);
 	};
 
 	return (
@@ -37,8 +43,16 @@ const Navbar = () => {
 					</div>
 					<div className={styles.accountButtons}>
 						<a href=''>Login</a>
-						<SignUp isHovered={isHovered} />
-						<Hamburguer />
+						{!menuOpen && (
+							<SignUp isHovered={isHovered} menuOpen={menuOpen} />
+						)}
+						<Hamburguer
+							menuOpen={menuOpen}
+							toggleMenu={handleTogglemenu}
+						/>
+						<div className={`${menuOpen ? '' : styles.display}`}>
+							<MenuDisplay menuOpen={menuOpen} />
+						</div>
 					</div>
 				</div>
 			</div>

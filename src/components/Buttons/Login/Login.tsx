@@ -1,9 +1,26 @@
-import React from 'react'
+import styles from './Login.module.css';
 
-const Login = () => {
-  return (
-    <div>Login</div>
-  )
+interface Props {
+	isHovered: boolean;
+	menuOpen: boolean;
 }
 
-export default Login
+const Login = ({ isHovered, menuOpen }: Props) => {
+	if (isHovered) {
+		return (
+			<button className={`${styles.button} ${styles.containerHovered}`}>
+				Login
+			</button>
+		);
+	} else if (!menuOpen) {
+		return (
+			<button className={`${styles.button} ${styles.backgroundGray}`}>
+				Login
+			</button>
+		);
+	}
+
+	return <button className={styles.button}>Login</button>;
+};
+
+export default Login;
