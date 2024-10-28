@@ -51,7 +51,6 @@
 	}
 	.navbarButtons {
 		display: flex;
-		background-color: yellow;
 		width: 100%;
 		align-items: center;
 	}
@@ -65,6 +64,7 @@
 
 	.navigationButtons ul:hover {
 		cursor: pointer;
+		font-weight: bolder;
 	}
 
 	.accountButtons a:first-child {
