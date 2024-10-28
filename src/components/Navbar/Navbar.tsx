@@ -6,6 +6,7 @@ import styles from './Navbar.module.css';
 import { useState } from 'react';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import MenuDisplay from './MenuLinks/MenuDisplay';
+import Collapsible from '../Collapsible/Collapsible';
 
 const Navbar = () => {
 	const [isHovered, setIsHovered] = useState(false);

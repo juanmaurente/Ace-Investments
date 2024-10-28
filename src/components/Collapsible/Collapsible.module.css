@@ -1,0 +1,38 @@
+.collapsibleHeader {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.collapsibleHeader h3 {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16.8px;
+}
+
+.iconContainer {
+	transition: all 0.3s ease;
+}
+
+.iconContainer.iconExpanded {
+	transform: rotate(180deg);
+}
+
+.collapsibleContent {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+
+.collapsibleContent.contentExpanded {
+	overflow: visible;
+}
+
+.subMenuContainer ul {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 16px;
+	border-bottom-left-radius: 400;
+	border-bottom-right-radius: 400;
+}
