@@ -1,0 +1,21 @@
+[
+	{
+		"header": "Products",
+		"items": [
+			"How it works",
+			"Features",
+			"Data privacy",
+			"Case studies",
+			"Testimonials",
+			"Portfolio calculator"
+		]
+	},
+	{
+		"header": "Resources",
+		"items": []
+	},
+	{
+		"header": "Portfolio",
+		"items": ["Fotos", "Videos"]
+	}
+]
