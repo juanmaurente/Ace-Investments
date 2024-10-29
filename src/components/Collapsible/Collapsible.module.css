@@ -1,7 +1,14 @@
+.collapsible {
+	width: fit-content;
+}
+
 .collapsibleHeader {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	gap: 16px;
+	padding: 8px;
+	background-color: white;
 }
 
 .collapsibleHeader h3 {
@@ -21,10 +28,12 @@
 .collapsibleContent {
 	max-height: 0;
 	overflow: hidden;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	width: fit-content;
 }
 
 .collapsibleContent.contentExpanded {
+	max-height: 100vh;
 	overflow: visible;
 }
 
